@@ -6,7 +6,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab10
+namespace HW10
 {
 
     internal class ACipher : ICipher

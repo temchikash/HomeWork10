@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace HW10
 {
-    internal interface ICipher
+    interface ICipher
     {
-
+        string encode();
+        string decode();
     }
 }
