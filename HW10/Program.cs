@@ -25,6 +25,34 @@ namespace HW10
 
             ((ISquare)circle).Square();
             ((ISquare)rectangle).Square();
+
+
+
+
+            Console.WriteLine("HomeWork10");
+            List<Team> teams = new List<Team>();
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("Введите название страны участвующей в Большой Гонке : ");
+                teams.Add(new Team(Console.ReadLine()));
+            }
+
+            Game game = new Game(teams);
+            game.ChoiceGame(new Beach());
+            game.PlayGame();
+            game.ChoiceGame(new Computer());
+            game.PlayGame();
+            game.ChoiceGame(new Fishing());
+            game.PlayGame();
+            game.ChoiceGame(new Mail());
+            game.PlayGame();
+            game.ChoiceGame(new Mouse());
+            game.PlayGame();
+            game.ChoiceGame(new Ocean());
+            game.PlayGame();
+            game.ChoiceGame(new Slide());
+            game.PlayGame();
+            game.Print();
             Console.ReadKey();
         }
     }
