@@ -11,7 +11,7 @@ namespace HW10
         static Random random = new Random();
         public void Play(List<Team> teams)
         {
-            Console.WriteLine("Начинается игра в доту");
+            Console.WriteLine("Начинается лучший в мире данк-контест");
             for (int i = 0; i < teams.Count; i++)
             {
                 int rand = random.Next(1, 8);
